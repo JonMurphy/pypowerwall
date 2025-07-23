@@ -131,7 +131,7 @@ python decode.py <filename>
 This API fetches the Powerwall DIN (device identification number). It uses basic auth that appears to be: Tesla_Energy_Device:GW_PWD where the GW_PWD is the password near the QR code on the Powerwall that you scan with the Tesla Pros app.
 
 ```bash
-curl -v -k -u "Tesla_Energy_Device:GW_PWD"" https://192.168.91.1/tedapi/din
+curl -k -u "Tesla_Energy_Device:GW_PWD"" https://192.168.91.1/tedapi/din
 ```
 
 It only returns a simple string that contains the DIN:
